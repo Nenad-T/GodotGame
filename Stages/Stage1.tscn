@@ -15,6 +15,32 @@
 [node name="Stage1" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="grasslines" type="Node" parent="."]
+
+[node name="grassLine2" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 0, 200 )
+collision_mask = 6
+
+[node name="grassLine3" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 4000, 200 )
+collision_mask = 6
+
+[node name="grassLine4" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 8000, 200 )
+collision_mask = 6
+
+[node name="grassLine5" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 12000, 200 )
+collision_mask = 6
+
+[node name="grassLine6" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 16000, 200 )
+collision_mask = 6
+
+[node name="grassLine7" parent="grasslines" instance=ExtResource( 8 )]
+position = Vector2( 20000, 200 )
+collision_mask = 6
+
 [node name="HouseWithDoor" parent="." instance=ExtResource( 9 )]
 position = Vector2( 23400, 384 )
 
@@ -34,9 +60,6 @@ position = Vector2( 3056, 400 )
 
 [node name="Wolf5" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 3920, 296 )
-
-[node name="Wolf6" parent="Enemies" instance=ExtResource( 5 )]
-position = Vector2( 3888, 311.457 )
 
 [node name="Wolf4" parent="Enemies" instance=ExtResource( 5 )]
 position = Vector2( 3088, 208 )
@@ -58,30 +81,6 @@ centered = false
 [node name="WaterReflection" parent="." instance=ExtResource( 2 )]
 position = Vector2( 6616, 1140 )
 scale = Vector2( 31.2451, 3.43752 )
-
-[node name="grassLine2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 0, 200 )
-collision_mask = 6
-
-[node name="grassLine3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4000, 200 )
-collision_mask = 6
-
-[node name="grassLine4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 8000, 200 )
-collision_mask = 6
-
-[node name="grassLine5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 12000, 200 )
-collision_mask = 6
-
-[node name="grassLine6" parent="." instance=ExtResource( 8 )]
-position = Vector2( 16000, 200 )
-collision_mask = 6
-
-[node name="grassLine7" parent="." instance=ExtResource( 8 )]
-position = Vector2( 20000, 200 )
-collision_mask = 6
 
 [node name="DayNightCycle" parent="." instance=ExtResource( 11 )]
 delay = 100

@@ -125,6 +125,7 @@ func no_health():
 	if get_tree().change_scene(game_over_screen) != OK:
 		print ("An unexpected error occured when trying to switch scene")
 
+
 func show_inventory():
 	get_tree().paused = !get_tree().paused
 	$Inventory/InventoryContainer.visible = !$Inventory/InventoryContainer.visible
